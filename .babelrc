@@ -1,0 +1,26 @@
+{
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs",
+          [
+            "@babel/plugin-proposal-pipeline-operator",
+            {
+              "proposal": "minimal"
+            }
+          ]
+        ],
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "targets": {
+                "node": "current"
+              }
+            }
+          ]
+        ]
+      }
+    }
+  }
+  
